@@ -1,0 +1,68 @@
+.wrap{
+    margin: auto;
+    max-width: 70%;
+    background: gainsboro;
+}
+
+.mem1 {
+    background: url('./assets/img/1.png') center no-repeat;
+    box-sizing: border-box;
+}
+
+.mem2 {
+    background: url('./assets/img/2.png') center no-repeat;
+    box-sizing: border-box;
+}
+
+.mem3 {
+    background: url('./assets/img/3.png') center no-repeat;
+    box-sizing: border-box;
+}
+
+.mem4 {
+    background: url('./assets/img/4.png') center no-repeat;
+    box-sizing: border-box;
+}
+
+.mem5 {
+    background: url('./assets/img/5.png') center no-repeat;
+    box-sizing: border-box;
+}
+
+.mem6 {
+    background: url('./assets/img/6.png') center no-repeat;
+    box-sizing: border-box;
+}
+
+
+.mem {
+    width: 1000px;
+    height: 700px;
+}
+
+.slider{
+    margin: auto;
+    display: flex;
+    overflow: hidden;
+}
+
+.slide {
+    transition: translate 0.5s ease;
+}
+
+#slide1:checked ~ .slider .s1 {
+    transform: translate(30%);
+}
+
+#slide2:checked ~ .slider .s2 {
+    transform: translate(30%);
+}
+
+#slide3:checked ~ .slider .s3 {
+    transform: translate(30%);
+
+}
+
+#slide4:checked ~ .slider .s4 {
+    transform: translate(30%);
+}
