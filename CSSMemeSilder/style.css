@@ -1,12 +1,13 @@
 .wrap{
     margin: auto;
-    max-width: 70%;
+    width: 70%;
+    height: 90vh;
     background: gainsboro;
 }
 
 .mem1 {
     background: url('./assets/img/1.png') center no-repeat;
-    box-sizing: border-box;
+    box-sizing: content-box;
 }
 
 .mem2 {
@@ -36,22 +37,23 @@
 
 
 .mem {
-    width: 1000px;
-    height: 700px;
+    width: 100%;
 }
 
 .slider{
     margin: auto;
     display: flex;
     overflow: hidden;
+    width: 100%;
 }
 
 .slide {
     transition: translate 0.5s ease;
+    width: 100%;
 }
 
 #slide1:checked ~ .slider .s1 {
-    transform: translate(30%);
+    transform: translate(0%);
 }
 
 #slide2:checked ~ .slider .s2 {
