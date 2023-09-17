@@ -1,10 +1,16 @@
-.wrap{
-    margin: auto;
-    width: 70%;
-    height: 90vh;
+.wrap {
+    margin: 100px auto;
+    width: 80%;
+    height: 57vh;
     background: gainsboro;
     overflow: hidden;
+    padding-top: 4.30vw;
+  }
+
+.wrap input[type=radio] {
+    display: none;
 }
+
 
 input{
     margin-left: 3%;
@@ -12,32 +18,32 @@ input{
 }
 
 .mem1 {
-    background: url('./assets/img/1.png') center no-repeat;
+    background: url('./assets/png/1.png') center no-repeat;
     box-sizing: content-box;
 }
 
 .mem2 {
-    background: url('./assets/img/2.png') center no-repeat;
+    background: url('./assets/png/2.png') center no-repeat;
     box-sizing: border-box;
 }
 
 .mem3 {
-    background: url('./assets/img/3.png') center no-repeat;
+    background: url('./assets/png/3.png') center no-repeat;
     box-sizing: border-box;
 }
 
 .mem4 {
-    background: url('./assets/img/4.png') center no-repeat;
+    background: url('./assets/png/4.png') center no-repeat;
     box-sizing: border-box;
 }
 
 .mem5 {
-    background: url('./assets/img/5.png') center no-repeat;
+    background: url('./assets/png/5.png') center no-repeat;
     box-sizing: border-box;
 }
 
 .mem6 {
-    background: url('./assets/img/6.png') center no-repeat;
+    background: url('./assets/png/6.png') center no-repeat;
     box-sizing: border-box;
 }
 
@@ -55,7 +61,56 @@ input{
 .slide {
     transition: transform 1s;
     flex: 0 0 100%;
-    height: 80vh;
+    height: 50vh;
+    margin-bottom: 25px;
+  }
+
+
+.controls label {
+    display: inline-block;
+    width: 7px;
+    height: 7px;
+    margin: 3px;
+    padding: 7px;
+    background-color: #0d25fb;
+    border: 1px solid rgb(74, 10, 213);
+    border-radius: 50%;
+    box-shadow: 0px 0px 2px rgba(52, 11, 236, 0.8);
+    transition: background-color 0.8s, transform 0.2s;
+    cursor: pointer;
+    /* margin-top: 28px; */
+    text-align: end;
+    /* margin-right: 160px; */
+  }
+
+
+  .controls label:hover {
+    transform: skew(30deg, 20deg);
+    background-color: #b6bade;
+}
+
+
+.controls label:active {
+    transform: skew(30deg, 20deg);
+    background-color: #b6bade;
+}
+
+  .controls {
+    text-align: end;
+    margin-right: 20px;
+    margin-top: 1%;
+  }
+
+#slide1:checked ~ .controls label[for="slide1"],
+#slide2:checked ~ .controls label[for="slide2"],
+#slide3:checked ~ .controls label[for="slide3"],
+#slide4:checked ~ .controls label[for="slide4"],
+#slide5:checked ~ .controls label[for="slide5"],
+#slide6:checked ~ .controls label[for="slide6"] {
+
+    background-color: #5018df;
+    transform: transform: skew(45deg, 30deg);
+    cursor: default;
 }
 
 #slide1:checked ~ .slider {
@@ -85,6 +140,34 @@ input{
 }
 
 .text {
-    margin-left: 3%;
-    margin-top: 2%;
+    margin-left: 2%;
+    margin-top: 3%;
+  }
+
+  @media(max-width: 768px)  {
+
+    .wrap {
+        margin: 100px auto;
+        width: 80%;
+        height: 50vh;
+        background: gainsboro;
+        overflow: hidden;
+        padding-top: 1vw;
+      }
+
+    .text {
+        text-align: center;
+        margin-top: 10%;
+    }
+
+    .controls {
+        text-align: center;
+        margin-top: -1.12vw;
+      }
+    .slide {
+        transition: transform 1s;
+        flex: 0 0 100%;
+        height: 40vh;
+        margin-bottom: 25px;
+    }
 }
