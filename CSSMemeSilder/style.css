@@ -113,28 +113,34 @@ input{
 
 #slide1:checked ~ .slider {
     transform: translateX(0%);
+    transition: 1s;
 }
 
 #slide2:checked ~ .slider {
     transform: translateX(-100%);
+    transition: 1s;
 }
 
 #slide3:checked ~ .slider {
     transform: translateX(-200%);
+    transition: 1s;
 
 }
 
 #slide4:checked ~ .slider {
-    transform: translate(-300%);
+    transform: translateX(-300%);
+    transition: 1s;
 }
 
 #slide5:checked ~ .slider {
-    transform: translate(-400%);
+    transform: translateX(-400%);
+    transition: 1s;
 
 }
 
 #slide6:checked ~ .slider {
-    transform: translate(-500%);
+    transform: translateX(-500%);
+    transition: 1s;
 }
 
 .text {
